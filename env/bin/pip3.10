@@ -1,4 +1,4 @@
-#!/Users/mac/Crucible_FullStack/env/bin/python
+#!/Users/mac/Crucible_FullStack/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
