@@ -3,24 +3,24 @@
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
 
       
-<div id="calendar">CheckCalendar</div>
-
+<div id="calendar"></div>
+<p id="demo" onclick="myFunction()">Calendar</p>
       <script>
-
-        document.addEventListener('click', function() {
+        function myFunction() {
+          document.getElementById("demo");
           var calendarEl = document.getElementById('calendar');
 
           var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             aspectRatio: '2.25',
-            selectable: true,
-            editable: false,
             events: [
             {
               title: 'Crucible',
               start: '2023-07-18',
               end: '2023-07-22',
-              url: 'https://www.britannica.com/science/jungle'
+              url: 'https://www.britannica.com/science/jungle',
+              selectable: true,
+              editable: false,
             }
             ],
             eventBackgroundColor: 'red',
@@ -38,9 +38,9 @@
               }
             },
             headerToolbar: {
-              left: 'prev,next today myCustomButton',
+              right: 'prev,next today myCustomButton',
               center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay'
+              left: 'dayGridMonth,timeGridWeek,timeGridDay'
 
             },
             eventClick: function(info) {
@@ -56,7 +56,7 @@
             },
           });
           calendar.render();
-       });
+       };
   
       </script>
 
