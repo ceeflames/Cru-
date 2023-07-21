@@ -1,34 +1,32 @@
 
 {% block content %}
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-
+<script src='fullcalendar/dist/index.global.js'></script>
       
 <div id="calendar"></div>
 <p id="demo" onclick="myFunction()">Calendar</p>
       <script>
         function myFunction() {
           document.getElementById("demo");
+          var allowedDates =  ['2023-05-07', '2023-05-17', '2023-05-27', 
+          '2023-06-22'];
           var calendarEl = document.getElementById('calendar');
-
           var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             aspectRatio: '2.25',
+            selectable: true,
+            editable: true,
             events: [
             {
               title: 'Crucible',
               start: '2023-07-18',
               end: '2023-07-22',
               url: 'https://www.britannica.com/science/jungle',
-              selectable: true,
-              editable: false,
             }
             ],
-            eventBackgroundColor: 'red',
+            eventBackgroundColor: '',
             eventTextColor: 'white',
             eventBorderColor: 'green',
-            header: {
-              center: 'addEventButton'
-            },
             customButtons: {
               myCustomButton: {
                 text: 'crucible!',
@@ -37,6 +35,7 @@
                 }
               }
             },
+            // customize the headerToolbar
             headerToolbar: {
               right: 'prev,next today myCustomButton',
               center: 'title',
@@ -44,6 +43,7 @@
 
             },
             eventClick: function(info) {
+              // Prevent default events
               info.jsEvent.preventDefault();
 
 
@@ -52,7 +52,11 @@
               }
             },
             dateClick: function(info) {
-              alert('Date: ' + info.dateStr);
+              var clickedDate = info.dateStr;
+              // Check if the clicked date is in the allowedDates array
+              if (allowedDates.includes(clickedDate)) {
+                alert('Date clicked: ' + clickedDate);
+              }
             },
           });
           calendar.render();
