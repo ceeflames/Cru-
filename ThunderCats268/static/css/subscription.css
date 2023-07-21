@@ -1,0 +1,60 @@
+
+/* SUBSCRIPTION SECTION */
+.subcribe {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/shell-beach-sea.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.subcribe_block {
+    display: block;
+    background-color: rgba(17, 206, 219, 0.9);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.4rem;
+    width: 65%;
+}
+.label_sub {
+    text-align: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-register input {
+    margin: 10px;
+}
+
+.email_input {
+    margin: 2px;
+    padding: 5px 40px;
+    background-color: lightblue;
+}
+
+.email_submit {
+    color:  rgba(17, 206, 219, 0.9);
+    margin: 2px;
+    padding: 5px 40px;
+    border-radius: 0.35rem;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.email_submit:hover,
+.email_submit:focus {
+    color: black;
+    background-color: rgba(17, 206, 219, 0.9);
+    transition: 0.4s ease-in-out;
+}

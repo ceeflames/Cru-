@@ -1,0 +1,12 @@
+@['N$:DUDE*', 'E$:DUDE@GMAIL.com*', 'M$:DUDE_TEST*']&
+@['N$:DUDE_0*', 'E$:DUDE_0@GMAIL.com*', 'M$:DUDE_TEST*']&
+@['N$:DUDE_1*', 'E$:DUDE_1@GMAL.com*', 'M$:DUDE_TEST_1*']&
+@['N$:DUDE_2*', 'E$:DUDE_2@GMAL.com*', 'M$:DUD*']&
+@['N$:DUDE_3*', 'E$:DUDE_3@GMAL.com*', 'M$:DUDE_TEST_3*']&
+@['N$:dillon_test*', 'E$:Dillonb_ach@yahoo.com*', 'M$:HTML beta test*']&
+@['N$:DILLON_TEST_TWO*', 'E$:dillonkevin95@yahoo.com*', 'M$:TESTING SUPSCRIPTION*']&
+@['N$:dude*', 'E$:dillon.nixlyn@yahoo.com*', 'M$:WTF??*']&
+@['N$:DILLON_TEST_TWO*', 'E$:dillon.nixlyn@gmail.com*', 'M$:*']&
+@['N$:TEST 12-12*', 'E$:Dillonb_ach@yahoo.com *', 'M$:TEST MSG*']&
+@['N$:BETA_GAMA*', 'E$:dillon.test@gmail.com*', 'M$:THIS IS THE LATEST*']&
+@['N$:NEW_GAMMA*', 'E$:dude@me.com*', 'M$:TEST_GAMMA_EMAILING*']&

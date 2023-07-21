@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../static/css/myAdmin.css">
+    <link rel="icon" type="image/svg+xml" href="{{url_for('static', filename='images/Boakt.jpeg')}}" />
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
+
+    <title>ADMIN_PAGE</title>
+</head>
+<body>
+
+    <div>
+        <a href="./logout"><img class="logo" src="../../static/images/Boakt _WTF_uhm_.png"></a>
+    </div>
+
+
+    <section class="news_sect">
+    <div class="news_up">
+        <h1 class="update_head">
+            UPDATE_NEWS
+        </h1>
+        <h4>
+            CURRENT NEWS: <br>  {{ news_up }}
+        </h4>
+        <form method="post">
+            <div class="new_update">
+                <div class="new_head">
+                <label class="news_head">What's your news update</label>
+                </div>
+                <div class="in_put">
+                <input class="in_put_box" type="text" id="in_put" name="in_put" value="DATA" placeholder="NEWS_UPDATE?">
+                </div>
+                <input type="submit" value="SUBMIT" class="submitter">
+            </div>
+        </form>
+    </div>
+    </section>
+    <section>
+        <div class="new_bookings">
+            <h3 class="h3_">BOOKINGS</h3>
+            <div class="book_table">
+                <div class="new_book_dates">
+                    {# { bookings_ } #}
+
+                    {# 30_Min CALENDAR #}
+                    <div class="t_m" id="t_m" >
+                        <div class="calendar_head" id="calendar_head">
+                            <H4>
+                                PLEASE SELECT A DATE
+                            </H4>
+                        </div>
+                        <div class="t30_min_Dur" id="t30m" >
+                            <input type="text" id="calendarA" name="calendarA" date-date-format="yy-mm-dd" class="form-control" placeholder="CLICK HERE TO SELECT">
+                        </div>
+                    </div>
+
+                    {# PRINT CURRENT LIST OF SLOTS_DATA #}
+                    <div class="time_slots">
+                        <h4 id="selcDate">
+                            BOOKING_SLOTS
+                        </h4>
+                        {# TimeSlots#}
+                        <div class="t30_min_slots" id="t30m_slots">
+                            <ul class="t30_menu">
+                                <li class="t30-li" id="ti30_slot0"  ><a id="t30_a_0">6:30-7:00  </a>{# 6:30-7:00 #} </li>
+                                <li class="t30-li" id="ti30_slot1"  ><a id="t30_a_1">7:00-7:30  </a>{# 7:00-7:30 #} </li>
+                                <li class="t30-li" id="ti30_slot2"  ><a id="t30_a_2">7:30-8:00  </a>{# 7:30-8:00 #} </li>
+                                <li class="t30-li" id="ti30_slot3"  ><a id="t30_a_3">8:00-8:30  </a>{# 8:00-8:30 #} </li>
+                                <li class="t30-li" id="ti30_slot4"  ><a id="t30_a_4">8:30-9:00  </a>{# 8:30-9:00 #} </li>
+                                <li class="t30-li" id="ti30_slot5"  ><a id="t30_a_5">9:00-9:30  </a>{# 9:00-9:30 #} </li>
+                                <li class="t30-li" id="ti30_slot6"  ><a id="t30_a_6">9:30-10:00 </a>{# 9:30-10:00 #}</li>
+                                <li class="t30-li" id="ti30_slot7"  ><a id="t30_a_7">10:00-10:30</a>{# 10:00-10:30 #}</li>
+                                <li class="t30-li" id="ti30_slot8"  ><a id="t30_a_8">10:30-11:00</a>{# 10:30-11:00 #}</li>
+                                <li class="t30-li" id="ti30_slot9"  ><a id="t30_a_9">11:00-11:30</a>{# 11:00-11:30 #}</li>
+                                <li class="t30-li" id="ti30_slot10" ><a id="t30_a_10">11:30-12:00</a>{# 11:30-12:00 #}</li>
+                                <li class="t30-li" id="ti30_slot11" ><a id="t30_a_11">12:00-12:30</a>{# 12:00-12:30 #}</li>
+                                <li class="t30-li" id="ti30_slot12" ><a id="t30_a_12">12:30-13:00</a>{# 12:30-13:00 #}</li>
+                                <li class="t30-li" id="ti30_slot13" ><a id="t30_a_13">13:00-13:30</a>{# 13:00-13:30 #}</li>
+                                <li class="t30-li" id="ti30_slot14" ><a id="t30_a_14">13:30-14:00</a>{# 13:30-14:00 #}</li>
+                                <li class="t30-li" id="ti30_slot15" ><a id="t30_a_15">14:30-14:30</a>{# 14:30-14:30 #}</li>
+                                <li class="t30-li" id="ti30_slot16" ><a id="t30_a_16">14:30-15:00</a>{# 14:30-15:00 #}</li>
+                                <li class="t30-li" id="ti30_slot17" ><a id="t30_a_17">15:00-15:30</a>{# 15:00-15:30 #}</li>
+                                <li class="t30-li" id="ti30_slot18" ><a id="t30_a_18">15:30-16:00</a>{# 15:30-16:00 #}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="del_popup" id="del_popup">
+
+                    <div class="close" id="close">
+                        <h5>+</h5>
+                    </div>
+
+                    <div class="user_data"  id="user_data">
+                        <a>USER_DATA</a>
+                        <label>
+                            <a id="u_name">NAME</a>
+                        </label>
+                        <label>
+                            <a id="u_mail">EMAIL</a>
+                        </label>
+
+                    </div>
+                    <div >
+                        <form method="POST">
+
+                        <input id="del_date" style="display: none;" name="date_" value="_">
+                        <input id="del_slot" style="display: none;" name="slot_num" value="_">
+                        <input id="del_name" style="display: none;" name="user_name" value="_">
+                        <input id="del_data" style="display: none;" name="user_email" value="_">
+                        <input id="hit_t" onclick="hit_that()" class="del_" type="submit"  name="submit_it" value="DELETE_SLOT" >
+                        </form>
+                    </div>
+                    <div class="mail_em">
+                        <a>SEND_EMAIL?</a>
+                    </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="user_sect">
+
+        <div class="emailing">
+            <a>ACTIVE USERS</a>
+
+        <br/>
+        <div class="users">
+            {% for user in users %}
+            <div clss="user">
+                <div class="user_id">USER_ID    :: {{ user.id }}</div>
+                <div class="user_id">USER_NAME  :: {{ user.name }}</div>
+                <div class="user_id">USER_EMAIL :: {{ user.email }}</div>
+                <div class="user_id">USER_MSG   :: {{ user.msg }}</div>
+                <br/>
+
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+    {# SCRIPT SRCs #}
+
+    <script src="../../static/js/admin.js"></script>
+    <!-- script src="../../static/js/nav.js"></script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    {# GET BOOKED DATES FROM API #}
+    <input type="hidden" id="boat_1_dates" value="{{ bookings }}">
+    <input type="hidden" id="full_dates" value="{{ full_dates }}">
+
+    {# CALENDER UPDATES/SELECTS #}
+    {# ------------------------ #}
+    {# CALENDAR FOR 30_MIN BOOKINGS #}
+    {# ToDO: GET THIS SHIT IN A SEPERATE FILE >:| #}
+    <script>
+        // BOOKINGS DATA FROM API
+        console.log("HERE?FLASK_[ACTIVE]")
+        // VARIABLE __INIT__
+        try {
+            // BOAT 1
+            var booked_dates_1 = document.querySelector('#boat_1_dates').value;
+        }
+        catch (err) {
+            console.log("[ERROR]:[LOADING DATA]::{home.html:<script>} \n[err]: ", err);
+        };
+
+        // DATEPICKER -> LOGIX
+        // ### 30 MIN ### //
+        // aka: BOAT_1
+        try
+        {
+            // DO NOT TOUCHH
+            // ^^^  DO NOT TOUCHH ^^^ //
+
+
+            // DATE_PICKER
+            $(function()
+            {
+                $("#calendarA").datepicker
+                (
+                    {
+                        Format: "yyyy/mm/dd",
+                        minDate: "01/01/2002",
+                        onSelect: function()
+                        {
+                            var select_ed = $(this).val();
+                            //console.log(select_ed);
+                            let dd_ = select_ed.slice(0,2);
+                            let mm_ = select_ed.slice(3,5);
+                            let yyyy_ = select_ed.slice(6,10);
+                            let selcDate = yyyy_+"/"+dd_+"/"+mm_;
+                            console.log("SELECTED DATE: ", selcDate);
+                            //slotSelect(selcDate, booked_dates_1);
+                            filterDates(selcDate, booked_dates_1);
+                        }
+                    }
+                )
+            });
+            // ^^^  DO NOT TOUCHH ^^^ //
+
+        }
+        catch (err){
+            console.log("[ERROR]:[BOAT_1]:[LOGIX]::{home.html:<script>} \n[err]: ", err);
+        }
+        // ^^^  DO NOT TOUCHH ^^^ //
+
+        
+    </script>
+    {# ToDO: GET THIS SHIT IN A SEPERATE FILE >:| #}
+
+
+</body>
+</html>

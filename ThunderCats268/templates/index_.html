@@ -1,0 +1,17 @@
+
+{% block content %}
+
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='pics/logo_1.png') }}" />
+    <!--link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/Boakt.jpeg') }}" /-->
+    <link href="https://www.fontzip.com/storage/2018/11/06/vermin-vibes-slant/webfonts/Vermin Vibes Slant.css" rel="stylesheet" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
+    {% include "nav_.html" %}
+    {% include "calendar.html" %}
+    {% include "main_.html" %}
+    {% include "news_.html" %}
+    {% include "about_.html" %}
+    {% include "subscription_.html" %}
+    {% include "footer_.html" %}
+    <script src="../static/js/index_.js"></script>
+
+{% endblock %}

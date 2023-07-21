@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+
+    top:0;
+    left:0;
+    margin:0;
+    padding: 0;
+}
+
+
+
+header{
+    height:0;
+}
+
+.sub_head {
+    top:0;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.sub_cont {
+    display: flex;
+    margin: auto;
+    margin-top: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

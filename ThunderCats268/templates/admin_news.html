@@ -1,0 +1,36 @@
+{% block content %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin_news.css">
+    <link rel="icon" type="image/svg+xml" href="{{url_for('static', filename='images/Boakt.jpeg')}}" />
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
+
+    <title>ADMIN_PAGE</title>
+
+
+    <section class="news_sect" id="news_sect">
+    <div class="news_up">
+        <h1 class="update_head">
+            UPDATE NEWS
+        </h1>
+        <h4>
+            CURRENT NEWS: <br>  {{ news_up }}
+        </h4>
+        <form method="post">
+            <div class="new_update">
+                <div class="new_head">
+                <label class="news_head">What's your NEWS update</label>
+                </div>
+                <div class="in_put">
+                <input class="in_put_box" type="text" id="in_put" name="in_put" value="DATA" placeholder="NEWS_UPDATE?">
+                </div>
+                <input type="submit" name="news" value="NEWS" class="submitter">
+            </div>
+        </form>
+    </div>
+    </section>
+
+
+{% endblock %}

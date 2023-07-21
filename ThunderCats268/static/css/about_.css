@@ -1,0 +1,233 @@
+/* ABOUT SECTION */
+.about {    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+
+    /*  */
+    animation-name: animate;
+    animation-direction: unset;
+    animation-duration: 56s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+
+.abouts {
+    display: flex;
+}
+
+.main-content{
+    display: inline-block;
+    background-color: rgba(17, 206, 219, 0.75);
+    padding: 20px 20px;
+    border-radius: 1rem;
+    height: 75vh;
+    margin: 5% 5%;
+    width: 40%;
+    text-align:justify;
+}
+.pilot-pic {
+    border-radius: 0.65rem;
+    background-image: url('../pics/conor_profile_pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.about-pic {
+    border-radius: 0.65rem;
+    background-image: url('../pics/antigua_flag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+
+.over-text{
+    height: 33vh;
+    position: inherit;
+    overflow-y: scroll;
+    text-align:justify;
+    text-size-adjust: auto;
+    color:rgb(255, 255, 255);
+    scrollbar-width: none;
+}
+.over-text::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* MERGE THIS BETTER DUDE :| */
+
+@keyframes animate{
+
+    /*  FRAME ONE */
+
+    0%{
+        background-color: aliceblue;
+        background-image: url("../pics/beach_bg_1.jpeg");
+        background-blend-mode: normal;
+    }
+
+
+    /*  FRAME TWO */
+
+    10%{
+        background-image: url("../pics/beach_bg_1.jpeg");
+        background-image: url("../pics/beach_bg_2.jpeg");
+        background-blend-mode: normal;
+    }
+
+
+
+
+    /*  FRAME THREE */
+
+    25%{
+        background-image: url("../pics/beach_bg_2.jpg");
+        background-image: url("../pics/beach_bg_3.jpg");
+        background-blend-mode: normal;
+    }
+
+    /*  FRAME FOUR */
+
+
+
+    40%{
+        /* SET NEXT FRAME */
+        background-image: url("../pics/beach_bg_3.jpg");
+        background-image: url("../pics/beach_bg_4.jpg");
+        background-blend-mode: normal;
+    }
+    
+
+
+    /*  FRAME FIVE */
+
+    50%{
+        background-image: url("../pics/beach_bg_4.jpg");
+        background-image: url("../pics/beach_bg_5.jpg");
+        background-blend-mode: normal;
+    }
+    60%{
+        background-image: url("../pics/beach_bg_5.jpg");
+        background-blend-mode: normal;
+    }
+    /*  FRAME SIX */
+    65%{
+        background-image: url("../pics/beach_bg_5.jpg");
+        background-image: url("../pics/beach_bg_6.jpg");
+        background-blend-mode: normal;
+    }
+    75%{
+        background-image: url("../pics/beach_bg_6.jpg");
+        background-blend-mode: normal;
+    }
+
+    /*  FRAME SEVEN */
+    80%{
+        background-image: url("../pics/beach_bg_6.jpg");
+        background-image: url("../pics/beach_bg_7.jpg");
+        background-blend-mode: normal;
+    }
+
+    85%{
+        background-image: url("../pics/beach_bg_7.jpg");
+        background-blend-mode: normal;
+    }
+
+    100%{
+        background-image: url("../pics/beach_bg_7.jpg");
+        background-image: url("../pics/beach_bg_1.jpeg");
+        background-blend-mode: normal;
+    }
+
+}
+
+
+.bg-imagery {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.daH {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 3;
+    color: white;
+}
+
+
+@media
+only screen and (max-device-width: 480px), 
+only screen and (min-device-width: 320),
+only screen and (min-device-pixel-ratio : 1.5){
+
+    .daH {
+        font-size: 3.8em;
+        font-weight: bolder;
+        text-align: center;
+        z-index: 3;
+        color: black;
+    }
+    .abouts{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content{
+        background-color: rgba(17, 206, 219, 0.9);
+        padding: 5px 5px;
+        border-radius: 1rem;
+        height: 45vh;
+        width: 80vw;
+        margin: 5% 5%;
+        margin-left: 0%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .pilot-pic {
+        background-image: url('../pics/conor_profile_pic.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        width: 90%;
+        margin: 1% 5%;
+        overflow-y: none;
+    }
+    .about-pic {
+        background-image: url('../pics/antigua_flag.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        width: 90%;
+        margin: 1% 5%;
+        overflow-y: none;
+    }
+    .over-text{
+        height: 16vh;
+        width: 90%;
+        margin: 5% 5%;
+        position: inherit;
+        overflow-y: scroll;
+        text-align:justify;
+        text-size-adjust: auto;
+        color:black;
+        font-size: 3rem;
+    }
+}

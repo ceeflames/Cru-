@@ -1,0 +1,312 @@
+
+/* INIT */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+}
+section {
+    margin: 0;
+    padding: 0;
+}
+.login_register {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(145, 145, 145, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opts {
+    width: 75vh;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.opts div input{
+    display: none;
+}
+h4 {
+    padding: 15px;
+    border-radius: 0.7rem;
+    justify-content: space-around;
+    text-align: center;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(95, 64, 46, 0.05);
+    text-shadow: 0px 0px 10px rgba(46, 73, 95, 0.95);
+}
+
+.opt_login_ {
+    padding: 7px;
+    margin: 30px 20px;
+    width: 60%;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(circle, rgba(167, 82, 26, 0.3) 10%, rgba(52, 76, 95, 0.35) 90%);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.9), 0px 0px 5px rgba(55, 55, 55, 0.8), 0px 0px 25px rgba(16, 2, 6, 0.2);
+    border-radius: 0.6rem;
+    cursor: pointer;
+
+}
+.opt_regi_{
+    padding: 7px;
+    margin: 20px 20px;
+    width: 60%;
+    height: 20%;
+
+    justify-content: space-around;
+    background: radial-gradient(circle, rgba(167, 82, 26, 0.3) 10%, rgba(52, 76, 95, 0.35) 90%);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 0px 0px 15px rgba(55, 55, 55, 0.8), 0px 0px 25px rgba(16, 2, 6, 0.2);
+    border-radius: 0.6rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.opt_change_{
+    padding: 7px;
+    margin: 20px 20px;
+    width: 60%;
+    height: 20%;
+
+    justify-content: space-around;
+    background: radial-gradient(circle, rgba(167, 82, 26, 0.3) 10%, rgba(52, 76, 95, 0.35) 90%);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 0px 0px 15px rgba(55, 55, 55, 0.8), 0px 0px 25px rgba(16, 2, 6, 0.2);
+    border-radius: 0.6rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.login_btn {
+    display: none;
+}
+.opt_login {
+    background-color: brown;
+}
+
+
+/* LOGIN MODAL */
+.lf_modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lf_content {
+    display: flex;
+    top: 10px;
+    position: inherit;
+    width: 80vh;
+    height: 65vh;
+    max-height: fit-content;
+    background-color: rgba(205, 205, 205, 1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* X :: Close LOGIN modal */
+.lf_exit{
+    font-size: x-large;
+    position: relative;
+    left: 230px;
+    top: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.form_lf {
+    display: block;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.form_lf div {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    border-width: 4px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 0.3rem;
+    box-shadow:  -3px -1px 5px rgba(255, 255, 255, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(34, 17, 1, 0.2);
+
+}
+
+
+/* LOGO */
+.logo {
+    position: fixed;
+    left: 15px;
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 75px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* REGISTER MODAL */
+.reg_modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reg_content {
+    display: flex;
+    top: 10px;
+    position: inherit;
+    width: 80vh;
+    height: 65vh;
+    max-height: fit-content;
+    background-color: rgba(205, 205, 205, 1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* X :: Close REGISTER modal */
+.reg_exit{
+    font-size: x-large;
+    position: relative;
+    left: 230px;
+    top: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.form_reg {
+    display: block;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.form_reg div {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-width: 4px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 0.3rem;
+    box-shadow:  -3px -1px 5px rgba(255, 255, 255, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(34, 17, 1, 0.2);
+}
+
+
+
+
+
+
+
+
+/* LOGIN MODAL */
+.forgot_modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.forgot_content {
+    display: flex;
+    top: 10px;
+    position: inherit;
+    width: 80vh;
+    height: 65vh;
+    max-height: fit-content;
+    background-color: rgba(205, 205, 205, 1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* X :: Close LOGIN modal */
+.forgot_exit{
+    font-size: x-large;
+    position: relative;
+    left: 230px;
+    top: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+/* FORM STUFF TO FILL IN */
+.form_for {
+    display: block;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.form_for div {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-width: 4px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 0.3rem;
+    box-shadow:  -3px -1px 5px rgba(255, 255, 255, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(34, 17, 1, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

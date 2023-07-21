@@ -1,0 +1,84 @@
+{% block content %}
+
+
+    <link rel="stylesheet" type="text/css" href="../static/css/subscription_.css">
+
+
+    {# FLASH #}
+   <!-- {% for msg in get_flashed_messages() %}
+        {{ msg }}
+    {% endfor %}
+    -->
+    {# SUBSCRIBE #}
+    <section >
+        <div class="subcribe" id="join">
+            {# COMMENT #}
+            <div class="subcribe_block">
+                <div class="label_sub">SUBSCRIBE</div>
+                <form method="POST" class="form-register" id="sub_form">
+
+                    {# NAME #}
+                    <div class="form-control name" >
+                        <input name="name_sub"  id="sub_name" placeholder="NAME" style="text-align: center;">
+                    </div>
+                    {# EAMIL #}
+                    <div class="form-control email" >
+                        <input name="email_sub" id="sub_email" placeholder="EMAIL" style="text-align: center;">
+                    </div>
+                    {# MSG #}
+                    <div class="form-control msg" >
+                        <input name="msg_sub" id="sub_msg" placeholder="MESSAGE (Optional)" style="text-align: center;">
+                    </div>
+
+                    {# SUBMIT BUTTON #}
+                    <input class="enter_" id="enter_sub" type="submit" name="submit_button"  style="display: block; width: 75%;" value="SUBSCRIBE">
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- script>
+        const subForm = document.getElementById("sub_form");
+        const s_Form = document.querySelector("#sub_form");
+        subForm.addEventListener("submit", function(e){
+            alert("e.preventDefault.. not working");
+            e.preventDefault();
+
+        fetch('/', {
+            method: 'POST',
+            name: name_,
+            s_Form["sub_email"]: email_,
+            s_Form["sub_msg"]: msg_
+        }).then(function(response){
+            console.log("HAPPINESS", response);
+        });
+    });
+
+    </script-->
+    <script>
+//        console.log("PREVENT_DEFAULT_SUB_FORM")
+//        let name_ = document.querySelector("#sub_name").value;
+//        let email_ = document.querySelector("#sub_email").value;
+//        let msg_ = document.querySelector("#sub_msg").value;
+//        let form_data = [name_, email_, msg_]
+//
+//
+//
+//
+//        $(document).ready(function(){
+//        $('#sub_form').on('submit',function (e) {
+//            console.log("sub_.html::64");
+//            function (q) {
+//                alert("GOT_IT", q);
+//            }
+//             e.preventDefault();
+//             console.log("HMM");
+//             });   
+//        });
+//
+//    </script>
+
+
+{% endblock %}

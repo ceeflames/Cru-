@@ -1,0 +1,131 @@
+
+/* CALENDAR HEAD */
+
+.calendar_head {
+    margin-top: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 50px 25px auto;
+    border-radius: 0.65rem;
+    color: black;
+    background-color: #11cedbcc;
+}
+
+
+/* CALENDAR SELECT */
+
+.t30_min_Dur .form-control{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: larger;
+    margin: 25px 25px;
+    width: 90%;
+    height: 55px;
+    border-radius: 0.65rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 206, 219, 0.8);
+}
+
+.t30_min_Dur :hover{
+    cursor: pointer;
+    border-radius: 0.75rem;
+    color: rgba(17, 206, 219, 1);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    box-shadow: 5px 7px rgba(17, 206, 219, 0.8);
+    transition: 0.4s ease-in-out;
+}
+
+/* DROP DOWN SLOT LIST */
+
+/* SLOT STYLES */
+
+/* the actual drop-down menu */
+.t30_menu {
+    left: 0;
+    list-style: none;
+    align-items: left;
+    justify-content: space-between;
+    padding: 0.1rem 0.3rem;
+    background-color: rgba(10, 4, 61, 0);
+    border: 1px rgb(255, 255, 255) solid;
+    /*box-shadow: 0 0.5rem .02em rgba(0, 0, 0, 0.2);*/
+    border-radius: 0.1rem;
+    display: block;
+    cursor: pointer;
+}
+
+/* ToDo: Clickable [LIKE THE OTHER STUFF] */
+.t30_menu li {
+    margin: 5px;
+    padding: 15px 15px;
+    background-color:  rgba(17, 206, 219, 0.1);
+    cursor: pointer;
+    border-radius: 0.65rem;
+}
+
+.t30_menu li input a{
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* DEL_ ITEM OPTION  */
+
+.del_popup {
+    display: none;
+    position: fixed;
+    border-radius: 1rem;
+    top: 10vh;
+    width: 65vw;
+    height: 70vh;
+    padding-bottom: 20px;
+    max-height: fit-content;
+    background-color: rgba(5, 5, 200, 0.9);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 25px;
+}
+
+.del_ {
+    background-color: brown;
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    padding: 20px 20px;
+    border-radius: 0.1rem;
+    display: flex;
+}
+
+
+.mail_em {
+    background-color: green;
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    height: max-content;
+    padding: 20px 20px;
+    border-radius: 0.1rem;
+    display: flex;
+
+}
+
+.close {
+    position: absolute;
+    transform: rotate(45deg);
+    left: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    top: 20px;
+}

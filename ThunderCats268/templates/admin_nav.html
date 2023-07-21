@@ -1,0 +1,48 @@
+{% block nav_ %}
+{# NAV #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/admin_nav.css">
+    
+</head>
+
+<body>
+<div>
+    <a href="./login"><img class="logo" src="../../static/pics/LOGO.png"></a>
+</div>
+<section class="my_nav">
+        <nav class="navbar">
+            <!-- ADD LINKS -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#bookings" class="nav-link">BOOKINGS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#news_sect" class="nav-link">NEWS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#user_sect" class="nav-link">SUBS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mailer" class="nav-link">MAILER</a>
+                </li>
+            </ul>
+
+            <!-- MAKES BURGER -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </section>
+
+
+    <script src="../../static/js/nav.js"></script>
+
+
+</body>
+    </html>
+{% endblock  %}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="{{url_for('static', filename='images/Boakt.jpeg')}}" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/log_reg.css">
+    <title>LOGIN_REGISTER</title>
+</head>
+<body>
+    <div>
+        <a href="./"><img class="logo" src="../../static/images/Boakt _WTF_uhm_.png"></a>
+    </div>
+    {# NAV #}
+    <section>
+        
+        
+    </section>
+
+    {# LOGIN_REGISTER #}
+    <section>
+
+
+        {# MAN SEG_ #}
+        <div class="login_register">
+            {# OPTIONS:
+                *LOGIN
+                *REGISTER
+                *CHANGE_PSWD #}
+            <div class="opts">
+                {# LOGIN #}
+                <div class="opt_login_" id="login_me_">
+                    <input type="button" class="login_btn" id="login_button">
+                    <h4>LOGIN</h4>
+                </div>
+                <div class="opt_regi_" id="opt_regi_">
+                    <input type="button" class="open_regi_">
+                    <h4>REGISTER</h4>
+                </div>
+                <div class="opt_change_" id="opt_change_">
+                    <input type="button" class="open_change_" id="open_change_">
+                    <h4>CHANGE_PSWD</h4>
+                </div>
+            </div>
+
+        </div>
+
+                {# LOGIN_FORM #}
+                <div class="lf_modal" id="lf_modal">
+                    <form method="POST">
+                        <div class="lf_content">
+                            <div class="lf_exit" id="lf_exit">+</div>
+                            <div class="form_lf">
+                                <div class="lf_head">
+                                    LOGIN_FORM
+                                </div>
+                                <div class="user_name">
+                                    <input type="text" name="user_" placeholder="USER_NAME" required>
+                                </div>
+                                <div class="PSWD">
+                                    <input type="password" name="pswd" placeholder="*******" required>
+                                </div>
+                                <div class="submit_login">
+                                    <input type="submit" name="submit_button" value="LOGIN">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                {# REGISTER_FORM #}
+                <div class="reg_modal" id="reg_modal">
+                    <form method="POST">
+                        <div class="reg_content">
+                            <div class="reg_exit" id="reg_exit">+</div>
+                            <div class="form_reg">
+                                <div class="reg_head">
+                                    REGISTER_FORM
+                                </div>
+                                <div class="user_name">
+                                    <input type="text" name="user_" placeholder="USER_NAME" required>
+                                </div>
+                                <div class="email_">
+                                    <input type="email" name="email_" placeholder="example@api_thunder.com" required>
+                                </div>
+                                <div class="PSWD">
+                                    <input type="password" name="pswd" placeholder="*******" required>
+                                </div>
+                                <div class="submit_reg">
+                                    <input type="submit" name="submit_button" value="REGISTER">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                {# FORGOT PASSWORD FORM #}
+                <div class="forgot_modal" id="forgot_modal">
+                    <form method="POST">
+                        <div class="forgot_content">
+                            <div class="forgot_exit" id="forgot_exit">+</div>
+                            <div class="form_for">
+                                <div class="forgot_head">
+                                    FORGOT_PASSWORD
+                                </div>
+                                <div class="user_name">
+                                    <input type="text" name="user_" placeholder="USER_NAME" required>
+                                </div>
+                                <div class="email_">
+                                    <input type="email" name="email_" placeholder="example@api_thunder.com" required>
+                                </div>
+                                <div class="submit_forgot">
+                                    <input type="submit" name="submit_button" value="FORGOT">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+    </section>
+    <script src="../../static/js/log_reg.js"></script>
+</body>
+</html>

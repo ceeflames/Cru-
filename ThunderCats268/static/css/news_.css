@@ -1,0 +1,371 @@
+/* NEWS SECTION */
+/* INIT */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.new_sect {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    left:0;
+    margin-left: 0;
+    position: inherit;
+    background-color: rgb(211, 211, 211);
+    opacity: 1;
+    z-index: 20;
+}
+
+.new_sect .news_head {
+    font-size: 3rem;
+    margin: 0 0;
+    z-index: 800;
+}
+
+.news_mdcards{
+    display: inline-flex;
+    justify-content: space-evenly;
+    z-index: 50;
+}
+
+.news{
+    height: 50vh;
+    /*width: 40vw;*/
+    display: inline-block;
+    width: 70%;
+    margin: 1% 1%;
+    margin-top: 0;
+    text-align: center;
+    font-size: xx-large;
+    z-index: 220;
+}
+
+.over-text{
+    height: 33vh;
+    position: inherit;
+    overflow-y: scroll;
+    text-align:justify;
+    z-index: 500;
+}
+
+.news .news_pic{
+    height: 95%;
+    background-image: url('../pics/antigua_flag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news_pic p{
+    text-overflow: ellipsis;
+    z-index: 550;
+}
+
+.news h1 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 200;
+}
+
+.news p {
+    overflow: auto;
+    font-size: x-large;
+    color: aliceblue;
+    z-index: auto;
+}
+
+
+
+.boats {
+    margin-top: 0;
+    height: 30vh;
+    width: 45%;
+    margin-left: 5%;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.boat_pic{
+    width: 40vw;
+    height: 40vh;
+    background-image: url('../pics/about_boakt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new_line {
+    color: black;
+}
+
+.scroll-wrapper {
+    position: relative;
+    height: 200px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+
+.scroll-track {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 2800px;
+    animation: 20s slidescroll  linear infinite;
+    padding-bottom: 30px;
+    z-index: 4;
+}
+
+@keyframes slidescroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*7));
+    }
+}
+
+
+
+.slide {
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    padding-bottom: 0;
+    overflow: hidden;
+    perspective: 100px;
+    cursor: pointer;
+    background-color: rgba(17, 206, 219, 0.2);
+    border-radius: 0.6rem;
+    margin-right: 15px;
+}
+
+.slide:hover,
+.slide:focus {
+    cursor: pointer;
+    color: rgba(17, 206, 219, 0.9);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.7rem;
+    transition: 0.4s ease;
+    box-shadow: 10px 5px rgba(17, 206, 219, 0.5);
+    transform: translateY(-25px);
+}
+
+
+
+.slide img {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    min-height: 80%;
+    object-fit: cover;
+}
+
+
+.scroll-wrapper::before,
+.scroll-wrapper::after{
+    content: "";
+    margin-bottom: 20px;
+    background: linear-gradient(
+        to right ,
+        rgba(17, 206, 219, 0.4) 0%,
+        rgba(17, 206, 219, 0) 100%
+    );
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    z-index: 2;
+
+}
+
+
+.scroll-wrapper::before{
+    left: 0;
+    top:0
+}
+
+.scroll-wrapper::after{
+    right: -2px;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+@media
+only screen and (max-device-width: 480px), 
+only screen and (min-device-width: 320),
+only screen and (min-device-pixel-ratio : 1.5){
+
+    .new_sect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        left:0;
+        margin-left: 0;
+        top: 0;
+        position: relative;
+        background-color: rgb(235, 235, 235);
+        opacity: 1;
+        z-index: 1;
+    }
+    .scroll-wrapper {
+        margin: 0 0;
+        position: relative;
+        height: 400px;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        padding-top: 0px;
+        z-index: 5;
+    }
+    .scroll-track div{
+    	width: 10020px;
+
+    }
+    .scroll-track {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        width: calc(500*12px);
+        animation: slidescroll 30s linear infinite;
+        padding: 25px 0px;
+        margin: 0px 0px;
+        margin-bottom: 0;
+
+    }
+    .scroll-track .slide {
+        width: 500px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;
+        overflow: hidden;
+        perspective: 5000px;
+        cursor: pointer;
+        background-color: rgba(17, 206, 219, 0.2);
+        border-radius: 0.6rem;
+        margin-right: 15px;
+        padding: 10px 10px;
+    }
+    .slide:focus {
+        color: rgba(17, 206, 219, 0.9);
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 0.7rem;
+        transition: 0.4s ease;
+        box-shadow: 10px 5px rgba(17, 206, 219, 0.5);
+        transform: translateY(-25px);
+    }
+    .news_mdcards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .news_head{
+        margin: 0px 0px;
+        padding: 0 0;
+        z-index: 10;
+    }
+    .news{
+        margin: 45px 0px;
+        height: 65%;
+        width: 100%;
+        text-align: center;
+        font-size: xx-large;
+        z-index: 30;
+    }
+    .news .news_pic{
+        position: relative;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        padding: 0 0;
+        margin-left:  5%;
+        display: flex;
+        overflow-y: scroll;
+        background-image: url('../pics/antigua_flag.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: inherit;
+    }
+    .news h1 {
+        margin-bottom: 10px;
+        font-size: 4rem;
+        color: rgb(0, 0, 0);
+        z-index: inherit;
+        position: relative;
+    }
+    .news h3 {
+        font-size: 3rem;
+    }
+    .news p {
+        word-wrap: break-word;
+        overflow: auto;
+        font-size: xx-large;
+        color: aliceblue;
+        z-index: inherit;
+        position: relative;
+        height: auto;
+        z-index: 500;
+    }
+    .boats {
+        position: relative;
+        margin: 0px 0px;
+        padding: 0 0;
+        top:0;
+        left: 0;
+        height: 35vh;
+        width: 100%;
+        color: black;
+        font-size: xx-large;
+        font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 3;
+    }
+    .boat_pic{
+        position: relative;
+        width: 90%;
+        height: 80%;
+        margin: 0px 5%;
+        background-image: url('../pics/about_boakt.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .new_line {
+        font-size: xx-large;
+        height: 20%;
+        z-index: 550;
+    }
+
+
+}

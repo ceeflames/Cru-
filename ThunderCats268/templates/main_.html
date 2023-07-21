@@ -1,0 +1,433 @@
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+	<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"--> 
+    <link rel="stylesheet" type="text/css" href="../static/css/main_.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/forms_.css">
+    <link href="https://www.fontzip.com/storage/2018/11/06/vermin-vibes-slant/webfonts/Vermin Vibes Slant.css" rel="stylesheet" />
+    <link href="//db.onlinewebfonts.com/c/08b82c2baca1fff54d39c8451cdd826a?family=Vermin+Vibes+Slant" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        {# BG-PARALAX #}
+
+        <div class="bg-paralax" id="bg-parallax"></div>
+
+        {# STRANGE EFFECTS #}
+        <div class="floaty"id="floaty"></div>
+
+        {# MAIN #}
+        <section>
+            <div class="main" id="main">
+                <div class="main-head">
+                    <h1 class="myH1">THUNDERCATS_268</h1>
+                    <h2 class="myH2"></h2>
+                </div>
+                <input type="submit" class="btn" id="btn" name="submit_button" value="BOOK NOW">
+                <!-- Bookings Modal -->
+                <div  class="bg-modal">
+                    <div class="modal-content" id="modal-content">
+                        <div class="close" id="close">+</div>
+                        <form method="POST">
+                            <!-- ToDo:                 -->
+                            <!-- CREATE POPUP       /  -->
+                            <!-- SPEED SELECT       /  -->
+                            <!-- NUMBER OF PEOPLE   /  -->
+                            <!-- CALENDER SELECT    /  -->
+                            <!-- TIME_SLOT SELECT   /  -->
+                            <!-- PRICE CALCULATION   **  -->
+
+
+                            {# NAME INPUT #}
+                            <div class="name-in">
+                                <label class="client-name-lb">NAME</label>
+                                <input type="text" id="client-name" name="client-name" placeholder="NAME" required>
+                            </div>
+                            <div class="email-in">
+                                <label class="client-email-lb">EMAIL</label>
+                                <input type="email" id="client-email" name="client-email" placeholder="EMAIL" required>
+                            </div>
+
+                            {# NUMBER #}
+                            <div class="phone-num" id="phone-num">
+                                PHONE NUMBER
+                                <input class="phum" id="phum" name="phum" type="tel" required>
+                            </div>
+                            <div class="pb_msg" id="pb-msg">
+                                MESSAGE
+                                <input rows="4" cols="30" type="text" class="user_msg" id="user-msg" name="user-msg-pb">
+                            </div>
+
+
+                            {# BOOKING TYPE SELECT #}
+                            <div class="slot_base" id="slot_base">
+                                <div class="type-select">
+                                    <div>
+                                        <h1>
+                                            BOOKING TYPE SELECT
+                                        </h1>
+                                        <h5>
+                                            For 2 hour & 30 minutes booking or more 
+                                        </h5>
+                                        <h5>
+                                            please make a Customized Booking for some discounts 
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="half_hour" id="half-hour">
+                                    30 MIN TIME SLOTS
+                                    <label>
+                                        <input type="radio" style="display: none;" class="hh_btn" name="hh-btn" value="half-hour">
+                                    </label>
+                                </div>
+                                <div class="personal" id="persona">
+                                    CUSTOMIZED BOOKINGS
+                                    <label>
+                                        <input type="radio" style="display: none;" class="pb_btn" name="hh-btn" value="person">
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            {# BEACH PICKUP POINT #}
+                            <div class="pick_up" id="pick_up">
+                                <div class="beach-head">
+                                    <h4>PICKUP POINTS</h4>
+                                </div>
+                                <div class="beaches" id="beaches">
+                                    <div class="beach-div" id="beach_1">
+                                        JOLLY BEACH
+                                        <label>
+                                            <input type="radio" class="beach-select"  id="beach1" name="beach-select" value="Jolly Beach">
+                                        </label>
+                                    </div>
+                                    <div class="beach-div" id="beach_2">
+                                        VALLEY CHURCH BEACH
+                                        <label>
+                                            <input type="radio" class="beach-select"  id="beach2" name="beach-select" value="Valley Church Beach">
+                                        </label>
+                                    </div>
+                                    <div class="beach-div" id="beach_3">
+                                        COCO/SMALL-FFRYES BEACH
+                                        <label>
+                                            <input type="radio" class="beach-select"  id="beach3" name="beach-select" value="Smallffryes Beach">
+                                        </label>
+                                    </div>
+                                    <div class="beach-div" id="beach_4">
+                                        BIG FFRYES BEACH
+                                        <label>
+                                            <input type="radio" class="beach-select"  id="beach4" name="beach-select" value="Bigffryes Beach">
+                                        </label>
+                                    </div>
+                                    <div class="beach-div" id="beach_5">
+                                        DARKWOOD BEACH
+                                        <label>
+                                            <input type="radio" class="beach-select"  id="beach5" name="beach-select" value="DarkWood Beach">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            {# SPEED SELECT #}
+                            <div class="speedy_" id="speedy_">
+                                <label class="speed-select-head">
+                                <h4>SPEED SELECT</h4>
+                                <p>A total of 4 people for Low Speed</p>
+                                <p>and total of 2 people for High Speed</p>
+                                </label>
+                                <div class="speed_select">
+                                    <div class="speed-select1"  id="speed_up">
+                                        <label >
+                                            <input type="radio"  id="high-speed" name="speed-select" value="HIGH SPEED">
+                                            <a id="high_a">HIGH SPEED</a> 
+                                        </label>
+                                    </div>
+                                    <div class="speed-select2" id="speed_down">
+                                        <label>
+                                            <input type="radio" id="low-speed" name="speed-select" value="LOW SPEED">
+                                            <a id="low_a">CRUISE</a> 
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# ADULT SELECT #}
+                            <div class="peeps_">
+                                <label class="people_select-head" id="people_select-head">
+                                <h4>NUMBER OF ADULTS</h4>
+                                <a>
+                                     USD $50 per adult per 30min
+                                </a>
+                                </label>
+                            <div class="people_select" id="people_select">
+                                {# FIRST TWO ADULT OPTIONS #}
+                                <div class="first-2" id="first-2">
+                                    <div  class="people-select01" id="peep-select1">{# > #}
+                                        1   ADULT
+                                        <label>
+                                            <input type="radio"  id="people-select1" name="people-select" value="1 PERSON">
+                                        </label>
+                                    </div>
+                                    <div class="people-select1" id="peep-select2">
+                                        2 ADULTS
+                                        <label>
+                                            <input type="radio" id="people-select2" name="people-select" value="2 PEOPLE">
+                                        </label>
+                                    </div>
+                                </div>
+                                {# LAST TWO ADULT OPTIONS #}
+                                <div class="last-2" id="last-2" >
+                                    <div class="people-select1" id="peep-select3">
+                                        3 ADULTS
+                                        <label>
+                                            <input type="radio"  id="people-select3" name="people-select" value="3 PEOPLE">
+                                        </label>
+                                    </div>
+                                    <div class="people-select1" id="peep-select4">
+                                        4 ADULTS
+                                        <label>
+                                            <input type="radio"  id="people-select4" name="people-select" value="4 PEOPLE">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            {# KID SELECT #}
+                            <div class="kids" id="kids" >
+                                <div class="children-head" id="kids-head">
+                                    <h4>NUMBER OF CHILDREN</h4>
+                                    <p>One Adult per child of 16 or younger</p>
+                                    <p>USD $50 per child per time slot</p>
+                                </div>
+                                <div class="children" id="kids">
+                                    <div  class="child-1" id="child-1-" >
+                                        1 CHILD
+                                        <label>
+                                            <input type="radio" class="children-count" id="child-01" name="child-count" value="1 Child">
+                                        </label>
+                                    </div>
+                                    <div class="child-2" id="child-2-">
+                                        2 CHILDREN
+                                        <label>
+                                            <input type="radio" class="children-count"  id="child-02" name="child-count" value="2 Children">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# 30_Min CALENDAR #}
+                            <div class="t_m" id="t_m">
+                                <div class="calendar_head" id="calendar_head">
+                                    <H4>
+                                        PLEASE SELECT A DATE
+                                    </H4>
+                                </div>
+
+
+                                <div class="t30_min_Dur" id="t30m" >
+                                    <input type="text" id="calendar1" name="calendar1" date-date-format="yy-mm-dd" class="form-control" placeholder="CLICK HERE TO SELECT">
+                                </div>
+
+
+                            </div>
+
+
+
+                            {# TimeSlots#}
+                            <div id="slots_drop" class="slots_drop">
+                                <div class="drop-down" id="drop-down">
+                                    <div id="select" class="select">
+                                        <span class="selected">SELECT TIME SLOTS</span>
+
+                                    </div>
+                                    <div class="t30_min_slots" id="t30m_slots">
+                                        <ul class="t30_menu">
+                                            <li class="t30-li" id="ti30_slot0"  >6:30-7:00  {# 6:30-7:00 #}  <input class="t30-check" type="checkbox" id="t30_slot0"  name="30_slot0"  value="slot0">   </li>
+                                            <li class="t30-li" id="ti30_slot1"  >7:00-7:30  {# 7:00-7:30 #}  <input class="t30-check" type="checkbox" id="t30_slot1"  name="30_slot1"  value="slot1">   </li>
+                                            <li class="t30-li" id="ti30_slot2"  >7:30-8:00  {# 7:30-8:00 #}  <input class="t30-check" type="checkbox" id="t30_slot2"  name="30_slot2"  value="slot2">   </li>
+                                            <li class="t30-li" id="ti30_slot3"  >8:00-8:30  {# 8:00-8:30 #}  <input class="t30-check" type="checkbox" id="t30_slot3"  name="30_slot3"  value="slot3">   </li>
+                                            <li class="t30-li" id="ti30_slot4"  >8:30-9:00  {# 8:30-9:00 #}  <input class="t30-check" type="checkbox" id="t30_slot4"  name="30_slot4"  value="slot4">   </li>
+                                            <li class="t30-li" id="ti30_slot5"  >9:00-9:30  {# 9:00-9:30 #}  <input class="t30-check" type="checkbox" id="t30_slot5"  name="30_slot5"  value="slot5">   </li>
+                                            <li class="t30-li" id="ti30_slot6"  >9:30-10:00 {# 9:30-10:00 #} <input class="t30-check" type="checkbox" id="t30_slot6"  name="30_slot6"  value="slot6">   </li>
+                                            <li class="t30-li" id="ti30_slot7"  >10:00-10:30{# 10:00-10:30 #}<input class="t30-check" type="checkbox" id="t30_slot7"  name="30_slot7"  value="slot7">   </li>
+                                            <li class="t30-li" id="ti30_slot8"  >10:30-11:00{# 10:30-11:00 #}<input class="t30-check" type="checkbox" id="t30_slot8"  name="30_slot8"  value="slot8">   </li>
+                                            <li class="t30-li" id="ti30_slot9"  >11:00-11:30{# 11:00-11:30 #}<input class="t30-check" type="checkbox" id="t30_slot9"  name="30_slot9"  value="slot9">   </li>
+                                            <li class="t30-li" id="ti30_slot10" >11:30-12:00{# 11:30-12:00 #}<input class="t30-check" type="checkbox" id="t30_slot10" name="30_slot10" value="slot10">  </li>
+                                            <li class="t30-li" id="ti30_slot11" >12:00-12:30{# 12:00-12:30 #}<input class="t30-check" type="checkbox" id="t30_slot11" name="30_slot11" value="slot11">  </li>
+                                            <li class="t30-li" id="ti30_slot12" >12:30-13:00{# 12:30-13:00 #}<input class="t30-check" type="checkbox" id="t30_slot12" name="30_slot12" value="slot12">  </li>
+                                            <li class="t30-li" id="ti30_slot13" >13:00-13:30{# 13:00-13:30 #}<input class="t30-check" type="checkbox" id="t30_slot13" name="30_slot13" value="slot13">  </li>
+                                            <li class="t30-li" id="ti30_slot14" >13:30-14:00{# 13:30-14:00 #}<input class="t30-check" type="checkbox" id="t30_slot14" name="30_slot14" value="slot14">  </li>
+                                            <li class="t30-li" id="ti30_slot15" >14:30-15:30{# 14:30-14:30 #}<input class="t30-check" type="checkbox" id="t30_slot15" name="30_slot15" value="slot15">  </li>
+                                            <li class="t30-li" id="ti30_slot16" >15:30-16:00{# 14:30-15:00 #}<input class="t30-check" type="checkbox" id="t30_slot16" name="30_slot16" value="slot16">  </li>
+                                            <li class="t30-li" id="ti30_slot17" >16:00-16:30{# 15:00-15:30 #}<input class="t30-check" type="checkbox" id="t30_slot17" name="30_slot17" value="slot17">  </li>
+                                            <li class="t30-li" id="ti30_slot18" >17:30-18:00{# 15:30-16:00 #}<input class="t30-check" type="checkbox" id="t30_slot18" name="30_slot18" value="slot18">  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {# PRICE CALCULATION #}
+                            <div class="price_" id="price_set" >
+                                <div class="price_head">
+                                    <div class="dol_"><h4 > PRICE: USD $</h4></div>
+                                    <div class="pr_"><h4 type="input"  id="total_" value="">0</h4></div>
+
+                                    {# use this as a 'buffer' #}
+                                </div>
+                                <p>Please note there will be a 30 minutes gap between charters</p>
+                            </div>
+
+                            {# SUBMIT BUTTON #}
+                            <input class="enter_" id="enter_" type="submit" name="submit_button"  value="Book Now">
+                            <input class="enter_" id="contact_" type="submit" name="submit_button"  value="Contact Now">
+                            <input style="display: none;" name="price_" type='text' id="myFin">
+                            <input style="display: none;" name="hidden_tot" id='hidden_tot' value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+        <script src="../static/js/forms_.js"></script>
+        <script src="../static/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <!--script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script-->
+
+    {# GET BOOKED DATES FROM API #}
+    <input type="hidden" id="boat_1_dates" value="{{ boat_1_dates }}">
+    <input type="hidden" id="full_dates" value="{{ full_dates }}">
+    {# CALENDER UPDATES/SELECTS #}
+    {# ------------------------ #}
+    {# CALENDAR FOR 30_MIN BOOKINGS #}
+    {# ToDO: GET THIS SHIT IN A SEPERATE FILE >:| #}
+    <script>
+
+
+        // PREVENT DATEPICKER FROM OPENING THE FUCKN KEYBOARD ON MOBILE !!! URGENTLY
+
+
+        // BOOKINGS DATA FROM API
+        console.log("HERE?FLASK_[ACTIVE]")
+        // VARIABLE __INIT__
+        try {
+            // BOAT 1
+            var booked_dates_1 = document.querySelector('#boat_1_dates').value;
+            var date_time_1 = []
+            var time_slot_1 = []
+            var dt_ = []
+            var dates_1 = booked_dates_1.split("@");
+            for (var d = 0; d < dates_1.length; d++)
+            {
+                let this_set = dates_1[d].split("*");
+                date_time_1.push(this_set);
+            }
+            var fm_dates = [];
+            fm_dates = document.querySelector("#full_dates").value;
+            var f_dates = fm_dates.split("*");
+        }
+        catch (err) {
+            console.log("[ERROR]:[LOADING DATA]::{home.html:<script>} \n[err]: ", err);
+        };
+        // SET DAYS
+        try{
+            //DAYS OF THE WEEK
+            var Alldays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+            //HERE IS WHEN YOU CHOOSE OFF DAYS eg "Monday"
+            var disableDays = [""]; // WILL ADD DYNAMIC OPTIONS IS ADMIN LATER ON
+        }
+        catch(err){
+            console.log("[ERROR]:[SET(DAYS)]::{home.html:<script>} \n[err]: ", err);
+        };
+
+        // EXTRACT DATES {BOAT_1}
+
+        // TIME SLOT SETTER {AVAILIBLE_DATE_SLOTS}
+        // ** DO NOT TOUCH **
+        // ^^ DO NOT TOUCH ^^
+
+        // DATEPICKER -> LOGIX
+        // ### 30 MIN ### //
+        // aka: BOAT_1
+        try
+        {
+            // DO NOT TOUCHH
+            function ShowDisableDates1(date)
+            {
+                ymd = date.getFullYear() + "/" + ("0" + (date.getMonth() + 1)).slice(-2) + "/" + ("0" + date.getDate()).slice(-2);
+                day = new Date(ymd).getDay();                
+                if ($.inArray(ymd, f_dates) < 0 && $.inArray(Alldays[day], disableDays) < 0) 
+                    {return [true, "enabled", "Book Now"];}
+                else
+                    {return [false, "disabled", "Fully Booked"];}
+            };
+            // ^^^  DO NOT TOUCHH ^^^ //
+
+            $(function()
+            {
+                $("#calendar1").datepicker
+                (                         
+                    {
+                        beforeShowDay:ShowDisableDates1,
+                        minDate: 0,
+                        Format: "yyyy/mm/dd",
+
+                        onSelect: function()
+                        {
+                            var select_ed = $(this).val();
+                            //console.log(select_ed);
+                            let dd_ = select_ed.slice(0,2);
+                            let mm_ = select_ed.slice(3,5);
+                            let yyyy_ = select_ed.slice(6,10);
+                            let selcDate = yyyy_+"/"+dd_+"/"+mm_;
+                            console.log("SELECTED DATE: ", selcDate);
+                            open_slots();
+                            slotSelect(selcDate, dates_1);
+                        }
+                    }
+                )
+            });
+            // ^^^  DO NOT TOUCHH ^^^ //
+
+        }
+        catch (err){
+            console.log("[ERROR]:[BOAT_1]:[LOGIX]::{home.html:<script>} \n[err]: ", err);
+        }
+        // ^^^  DO NOT TOUCHH ^^^ //
+
+    </script>
+    {# ToDO: GET THIS SHIT IN A SEPERATE FILE >:| #}
+
+
+    </body>
+
+
+
+{% endblock %}

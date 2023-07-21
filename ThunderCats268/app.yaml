@@ -1,0 +1,71 @@
+# Copyright 2021 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  python_version: 3
+
+# This sample incurs costs to run on the App Engine flexible environment. 
+# The settings below are to reduce costs during testing and are not appropriate
+# for production use. For more information, see:
+# https://cloud.google.com/appengine/docs/flexible/python/configuring-your-app-with-app-yaml
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+
+
+
+# A .YAML file is used to export DNS records to a
+# # domain managed by Google Cloud. The format is
+# # exclusive to Google Cloud DNS.
+#
+# ---
+#kind: dns#resourceRecordSet
+#name: 'thundercats268.com.'
+#rrdatas:
+#  - '1 aspmx.l.google.com.'
+#  - '5 alt1.aspmx.l.google.com.'
+#  - '5 alt2.aspmx.l.google.com.'
+#  - '10 alt3.aspmx.l.google.com.'
+#  - '10 alt4.aspmx.l.google.com.'
+#  ttl: 3600
+#  type: MX
+#---
+#kind: dns#resourceRecordSet
+#name: 'thundercats268.com.'
+#rrdatas:
+#  - '"v=spf1 include:_spf.google.com ~all"'
+#  ttl: 3600
+#  type: SPF
+#---
+#kind: dns#resourceRecordSet
+#name: 'thundercats268.com.'
+#rrdatas:
+#  - '"v=spf1 include:_spf.google.com ~all"'
+#  ttl: 3600
+#  type: TXT
+#---
+#kind: dns#resourceRecordSet
+#name: 'google._domainkey.thundercats268.com.'
+#rrdatas:
+#- '"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkXUzBOJq3YQm/u9zpMM7SvFj5vSYaRGqehTU75yESl2rBoZXSNAbLHScLiTs+L9bZf0UhyWW7VWBWf06niiDAaLX/EebQW+w9azZhT3aAtw5ONQNd6LGQufYemdLh+TyrbtHouDZclIM4zuVPQGp12ss84D7OKsaUsRsF9HelRPXif9pMaPwmesoOomn1Sut0" "6GXJRdPLl46WTSo0B6XC7RSNxYOv8c5tdzxFHACZSHQ0gM1i1YhCoAfL0ueIvy4FZW8gZPkdSxYZAmxQWHPiY5jogiMbk2Ht9sE/ioE1JOxMlqFCZMtva6+Dl4neZJXrrMwGreOhZ/sNLqfC6UUBQIDAQAB"'
+#  ttl: 3600
+#  type: TXT

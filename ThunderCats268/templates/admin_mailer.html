@@ -1,0 +1,42 @@
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../../static/css/admin_mailer.css">
+   
+<section id="mailer"  class="mailer">
+    <div class="email_sect">
+        <form action="" class="email_form" method="post">
+            <div class="head_line">
+                <label>
+                    SENDING A NEWSLETTER?
+                </label>            
+            </div>
+            <div class="subject_">
+                <label>
+                    SUBJECT?:
+                </label>
+                <input class="SUBJECT" name="subject" id="subject" >
+            </div>
+            <div class="body_">
+                <label>
+                    EMAIL_BODY?:
+                </label>
+                <input class="BODY" name="body" id="body"/>
+            </div>
+            <div class="foot_note">
+                <label>
+                    FOOT_NOTE?:
+                </label>
+                <input class="FOOT_NOTE" name="foot-note" id="foot-note">
+            </div>
+            <div>
+                <input type="submit"  class="submit" name="emailer" value="SEND"/>
+            </div>
+        </div>
+    </form>
+
+    </div>
+</section>
+
+
+
+{% endblock %}

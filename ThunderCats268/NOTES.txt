@@ -1,0 +1,44 @@
+### ToDo: ###
+# HTML/JAVASCRIPT/JINJA
+
+    # A) BOOKINGS POPUP FORM:
+        # TIME SLOT SELECT
+        # PRICING
+        # redirect(PayPal)
+
+    # B) ADMIN PAGE:
+        # NEW BOOKINGS UPDATER/INDEXING
+        # NEWS ARTICAL TEMPLATE_GENERATOR
+        # BACK_LOG INDEXING
+        # SUBCRIPTION INDEXING
+        # LOGIN_AUTH
+
+    # C) ABOUT US:
+        # HEADER & PARA
+        # SCROLLING VIDEOS/PICS
+    
+    # D) SUBCRIPTION:
+        # WELCOME POPUP:
+            # EMAIL_VARIFICATION (OPTIONAL)
+
+# API
+    # A) CLEAN CODE 
+        #{try/except} -> error_report.txt
+
+    # B) BOAKING_DATA_BASING:
+        # BOAT_(1&2):
+            # NAME
+            # DATE
+            # TIME
+            # UNIQ_CODE
+
+    # C) ADMIN PAGE:
+        #LOGIN_AUTH
+
+    # SYSTEM::SETUP
+        # HOSTING
+        # PAYPAL
+        # EMAIL_DAEMON
+
+
+# STYLING

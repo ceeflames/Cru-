@@ -1,0 +1,151 @@
+@import url(//db.onlinewebfonts.com/c/08b82c2baca1fff54d39c8451cdd826a?family=Vermin+Vibes+Slant);
+@font-face {font-family: "Vermin Vibes Slant"; src: url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.eot"); src: url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.woff") format("woff"), url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08b82c2baca1fff54d39c8451cdd826a.svg#Vermin Vibes Slant") format("svg"); }
+/* MAIN SECTION */
+
+.main{
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color:transparent;
+    z-index: 1;
+}
+
+.floaty {
+    display: none;
+
+}
+
+
+.bg-paralax{
+    background-image: url('../pics/og_beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -200;
+}
+
+
+.main-head h1 {
+    font-family:'Vermin Vibes Slant';
+    margin-top: 150px;
+    color: rgb(221, 221, 221);
+
+}
+.myH2 {
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+.btn {
+    color: #11cedbcc;
+    font-weight: bold;
+    font-size: large;
+    border:none;
+    background-color: rgba(12, 12, 12, 0.8);
+    padding: 1.7% 6.7%;
+    width: min-content;
+    margin-top: 1rem;
+    text-decoration: None;
+    border-radius: 0.35rem;
+}
+.btn:hover,
+.btn:focus {
+
+    border-radius: 0.75rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(17, 206, 219, 0.8);
+    text-shadow: 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 7px rgba(0, 0, 0, 0.7);
+    transition: 0.7s ease-in-out;
+}
+
+@media
+only screen and (max-device-width: 790px), 
+only screen and (min-device-width: 320),
+only screen and (min-device-pixel-ratio : 1.5){
+    body *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    
+    }
+    section {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .bg-paralax{
+        background-image: url('../pics/phone_pbg_2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -200;
+    }
+
+
+    /* MAIN SECTION */
+    .main{
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        background-color:transparent;
+        z-index: 1;
+    }
+    .myH1 {
+        margin-top: 150px;
+        left: 30px;
+        right: 30px;
+        color: black;
+        font-size: 3rem;
+        text-shadow: 1px -2px 15px rgb(8, 6, 49), 1px 1px 2px rgb(64, 182, 182);
+    }
+    .myH2 {
+        text-align: center;
+        color: black;
+        font-size: 3rem;
+        text-shadow: 1px 1px 19px rgb(8, 6, 49), 0 0 2px rgb(64, 182, 182);
+    }
+    .btn {
+        color: rgba(17, 206, 219, 0.8);
+        font-weight: bolder;
+        margin-top: 175px;
+        font-size: 3rem;
+        border:none;
+        background-color: rgba(12, 12, 12, 0.8);
+        padding: 1.7% 6.7%;
+        width: 600px;
+        height: 150px;
+        margin-top: 0.01rem;
+        text-decoration: None;
+        border-radius: 0.6rem;
+    }
+
+    .floaty {
+        display: block;
+        margin-top: 45vh;
+        position: absolute;
+        width: 250px;
+        height: 100px;
+        background-image: url('../pics/LOGO_BOAT.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 50;
+    
+    }
+    
+}

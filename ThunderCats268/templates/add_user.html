@@ -1,0 +1,24 @@
+
+{% block content %}
+
+    <link rel="stylesheet" type="text/css" href="../static/css/add_user.css">
+
+
+    <div>
+        <a href="./log_reg"><img class="logo" src="../../static/images/Boakt _WTF_uhm_.png"></a>
+    </div>
+
+    {% if name %}
+        <h1 class="myH1">WELCOME</h1>
+        <br/>
+        <h1 class="myH1">{{ name }}</h1>
+
+    {% endif %}
+
+        <br/>
+        <br/>
+
+        <a  class="btn" href="/">BACK HOME</a>
+
+
+{% endblock %}

@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+
+.logo {
+    position: fixed;
+    left: 15px;
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 75px;
+    z-index: 2;
+}
+
+
+section {
+    height: max-content;
+}
+
+.news_sect {
+    background-image: url("../images/IMG-20221108-WA0024.jpg");
+    background-size: 100% 100%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a {
+    color: black;
+}
+
+
+
+.news_up {
+    color: rgb(255, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:  left;
+    margin-left: 10%;
+}
+
+
+.news_up h1 {
+    font-size: x-large;
+}
+
+
+.submitter {
+    margin-top: 20px;
+    position: relative;
+    width: 60px;
+    color: rgb(255, 60, 0);
+}
+
+
+
+
+
+
+
+
+
+
+/* CALENDAR HEAD */
+
+.calendar_head {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 50px 25px auto;
+    border-radius: 0.65rem;
+    color: black;
+    background-color: rgba(17, 206, 219, 0.8);
+}
+
+
+/* CALENDAR SELECT */
+
+.t30_min_Dur .form-control{
+    text-decoration: none;
+    font-size: larger;
+    margin: 25px 25px;
+    width: 90%;
+    height: 55px;
+    border-radius: 0.65rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 206, 219, 0.8);
+}
+
+.t30_min_Dur :hover{
+    cursor: pointer;
+    border-radius: 0.75rem;
+    color: rgba(17, 206, 219, 1);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    box-shadow: 5px 7px rgba(17, 206, 219, 0.8);
+    transition: 0.4s ease-in-out;
+}
+
+/* DROP DOWN SLOT LIST */
+
+/* SLOT STYLES */
+
+/* the actual drop-down menu */
+.t30_menu {
+    left: 0;
+    list-style: none;
+    align-items: left;
+    justify-content: space-between;
+    padding: 0.1rem 0.3rem;
+    background-color: rgba(10, 4, 61, 0);
+    border: 1px rgb(255, 255, 255) solid;
+    /*box-shadow: 0 0.5rem .02em rgba(0, 0, 0, 0.2);*/
+    border-radius: 0.1rem;
+    display: block;
+}
+
+/* ToDo: Clickable [LIKE THE OTHER STUFF] */
+.t30_menu li {
+    margin: 5px;
+    padding: 15px 15px;
+    background-color:  rgba(17, 206, 219, 0.1);
+    cursor: pointer;
+    border-radius: 0.65rem;
+}
+
+.t30_menu li input a{
+    color: black;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* DEL_ ITEM OPTION  */
+
+.del_popup {
+    display: none;
+    position: fixed;
+    border-radius: 1rem;
+    top: 10vh;
+    width: 65vw;
+    height: 70vh;
+    padding-bottom: 20px;
+    max-height: fit-content;
+    background-color: rgba(5, 5, 200, 0.9);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 25px;
+}
+
+.del_ {
+    background-color: brown;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 20px 20px;
+    border-radius: 0.1rem;
+    display: flex;
+}
+
+
+.mail_em {
+    background-color: green;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 20px 20px;
+    border-radius: 0.1rem;
+    display: flex;
+
+}
+
+
+
+/* NAME- INPUT */
+.user_data{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    background-color: rgba(17, 206, 219, 0.9);
+}
+
+.user_data:hover,
+.user_data:focus{
+    box-shadow: 5px 5px rgba(0, 40, 50, 0.75);
+    transition: 0.45s ease-in-out;
+}
+
+
+
+
+.user_data label {
+    padding-top: 5px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.name-in input{
+    width: 80%;
+    text-align: center;
+    height: 35px;
+    border-radius: 0.5rem;
+}
+
+.email-in{
+    width: 90%;
+    display: block;
+    margin: 5px auto;
+    margin-top: 20px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    background-color: rgba(17, 206, 219, 0.9);
+}
+
+.email-in:hover,
+.email-in:focus {
+    box-shadow: 5px 5px rgba(0, 40, 50, 0.75);
+    transition: 0.8s ease-in-out;
+}
+
+
+.email-in label {
+    padding-top: 50px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.email-in input{
+    width: 80%;
+    display: inherit;
+    text-align: center;
+    height: 35px;
+    border-radius: 0.5rem;
+}
+
+
+
+
+/* SUBMIT_BUTTON */
+
+.DEL_ {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin:  14px 25px auto;
+    width: 90%;
+    padding: 15px 20px;
+    background-color: rgba(17, 206, 219, 0.9);
+    border-radius: 0.7rem;
+}
+
+.DEL_:hover,
+.DEL_:focus {
+    color: rgba(17, 206, 219, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    box-shadow: 5px 7px rgba(17, 206, 219, 0.75);
+    transition: 0.4s ease-in-out;    
+}
+
+
+
+
+
+
+
+
+/* CLOSE THE POPUP MODAL */
+.close {
+    font-weight: bold;
+    padding: 4px 9px;
+    border-radius: 10rem;
+    background-color: rgba(17, 206, 219, 0.9);
+    color: black;
+    position: absolute;
+    font-size: x-large;
+    top: 10px;
+    right: 15px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close:hover,
+.close:focus{
+    color: rgba(17, 206, 219, 0.9);
+    background-color: black;
+    box-shadow: 7px 0 rgba(17, 206, 219, 0.9);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.cal {
+    transform-origin: 0 0;
+}
+
+
+
+
+
+
+
+.user_sect {
+    background-image: url("../images/IMG-20221108-WA0024.jpg");
+    background-size: 100% 100%;
+    display: flex;
+
+}
+
+
+.emailing {
+    
+    display: block;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.users {
+    background-color: white;
+    margin: 20px 20px;
+
+    top:0;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.user {
+    margin: 10px 10px;
+
+}
